@@ -1,0 +1,19 @@
+[GIN-debug] GET    /                         --> main.main.func1 (5 handlers)
+[GIN-debug] GET    /profile                  --> main.main.func2 (5 handlers)
+[GIN-debug] GET    /error                    --> main.main.func3 (5 handlers)
+[GIN-debug] POST   /login                    --> main.main.func4 (5 handlers)
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :85
+Count : 1[GIN] 2024/08/06 - 13:40:01 | 200 |            0s |             ::1 | GET      "/profile"
+[GIN] 2024/08/06 - 13:40:01 | 200 |       512.5µs |             ::1 | GET      "/profile"
+Count : 2[GIN] 2024/08/06 - 13:40:01 | 200 |       759.5µs |             ::1 | GET      "/profile"
+[GIN] 2024/08/06 - 13:40:01 | 200 |       759.5µs |             ::1 | GET      "/profile"
+Count : 3[GIN] 2024/08/06 - 13:40:02 | 200 |       265.6µs |             ::1 | GET      "/profile"
+[GIN] 2024/08/06 - 13:40:02 | 200 |       265.6µs |             ::1 | GET      "/profile"
+[GIN] 2024/08/06 - 13:40:12 | 200 |            0s |             ::1 | GET      "/"
+[GIN] 2024/08/06 - 13:40:12 | 200 |         712µs |             ::1 | GET      "/"
+[GIN] 2024/08/06 - 13:40:12 | 200 |            0s |             ::1 | GET      "/"
+[GIN] 2024/08/06 - 13:40:12 | 200 |       844.4µs |             ::1 | GET      "/"
+[GIN] 2024/08/06 - 13:40:17 | 200 |            0s |             ::1 | POST     "/login"
+[GIN] 2024/08/06 - 13:40:18 | 200 |            0s |             ::1 | POST     "/login"
